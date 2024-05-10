@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>TuneClub >> Home</title>
+<link rel="stylesheet" type="text/css" href="/index.css">
+<link rel="icon" type="image/x-icon" href="icon.jpeg">
+</head>
+<body>
+<div class="container">
+  <div class="container1">
+   <div class="container11">
+    Welcome to TuneClub
+    </div>
+   <div class="container12">
+   <a href="login"><button>Login</button></a><br><br>
+   </div>
+   <div class="container12">
+   <a href="registration"><button>Registration</button></a>
+   </div>
+   </div>
+   <div class="container2">
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="coming3.jpg" style="width:100%" height="170px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="coming4.jpg" style="width:100%" height="170px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="coming5.jpg" style="width:100%" height="170px">
+  </div>
+</div>
+   </div>
+   </div>
+   <script>
+   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  // Increment index and reset to 1 if it reaches the end
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  // Display current slide
+  slides[slideIndex-1].style.display = "block";  
+  // Change slide every 2 seconds (2000 milliseconds)
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

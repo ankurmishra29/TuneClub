@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>TuneClub >> DisplaySongs</title>
+<link rel="stylesheet" type="text/css" href="/displaysong.css">
+<link rel="icon" type="image/x-icon" href="icon.jpeg">
+</head>
+<body>
+<div class="container">
+  <table>
+     <thead>
+        <tr>
+          <th>Name: </th>
+          <th>Artist: </th>
+          <th>Genre: </th>
+          <th>Play: </th>
+        </tr>
+     </thead>
+     <tbody>
+       <tr th:each="song:${songs}">
+          <td th:text="${song.name}"> </td>
+          <td th:text="${song.artist}"> </td>
+          <td th:text="${song.genre}"> </td>
+          <td id="playlist">
+           <audio controls>
+             <source th:src="${song.link}">
+           </audio>
+           </td>
+        </tr>
+     </tbody>
+  </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TuneClub >> Registration</title>
+<link rel="stylesheet" type="text/css" href="/registration.css">
+<link rel="icon" type="image/x-icon" href="icon.jpeg">
+</head>
+<body>
+ <div class="container">
+   <h2>Registration Form</h2>
+   <form action="register" method="post" >
+  <label><b>Username: </b></label><br>
+  <input type="text" name="username" placeholder="Enter Username.."><br><br>
+  <label><b>Email: </b></label><br>
+  <input type="email" name="email" placeholder="Enter Email.."><br><br>
+  <label><b>Password: </b></label><br>
+  <input type="password" name="password" placeholder="Enter Password.."><br><br>
+  <label><b>Gender: </b></label><br>
+  Male<input type="radio" name="gender" value="male">
+  Female<input type="radio" name="gender"value="female" >
+  Other<input type="radio" name="gender" value="other"><br><br>
+  <label><b>Role: </b></label><br>
+  Admin<input type="radio" name="role" value="admin">
+  Customer<input type="radio" name="role" value="customer"><br><br>
+   <label><b>Address: </b></label><br>
+  <textarea name="address" placeholder="Enter address.."></textarea><br><br>
+  <button type="submit" value="registration" class="input1">Register</button>
+  </form>
+  </div>
+</body>
+</html>

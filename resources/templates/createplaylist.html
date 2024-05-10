@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>TuneClub >> AddPlayList</title>
+<link rel="stylesheet" type="text/css" href="/createplaylist.css">
+<link rel="icon" type="image/x-icon" href="icon.jpeg">
+</head>
+<body>
+<div class="container">
+<h2>Add PlayList</h2>
+  <form action="addPlayList" method="post">
+    <label>PlayList Name: </label><br>
+    <input type="text" name="name" placeholder="Enter playlist name..">
+     <br><br>
+     <label>Select songs: </label><br>
+     <div th:each="song:${songs}">
+       <input type="checkbox" th:name="songs" th:value="${song.id}">
+       <label th:text="${song.name}"></label>
+     </div>
+     <br>
+     <input type="submit" value="Add PlayList" class="input1">
+  </form>
+  </div>
+</body>
+</html>

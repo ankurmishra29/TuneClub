@@ -1,0 +1,16 @@
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  background-image:url(back2.jpg); 
+  background-size: cover;
+  float:right;
+  margin-right:10%;
+}
+h2{
+	background-color: brown;
+	border-top-left-radius:50px;
+    border-bottom-right-radius:50px; 
+}
